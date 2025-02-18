@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#loom-companion-mv3, #shadow-host-companion {
+    display: none !important;
+}
+
+
+/* Entry */
+
+.entry{
+    height: 100%;
+    width: 100%;
+    background-image: url('/fond-bleu.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bsd{
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    color: #BC9B51;
+    height: 5px;
+}
+
+.logo-coutdown{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 50%;
+}
+
+.logo-entry{
+    width: 200px;
+    height: 200px;
+}
+
+.countdown{
+    height: fit-content;
+    color: #BC9B51;
+    font-family: "Pinyon Script", serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.time{
+    text-align: center;
+    font-size: x-large;
+}
+
+.entry .voir-invit{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.entry .lien{
+    color: #BC9B51;
+    font-family: "Pinyon Script", serif;
+    font-size: xx-large;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.entry a{
+    text-decoration: none;
+    color: #BC9B51;
+}
+
+.fleur-droite, .fleur-gauche{
+    width: 50px;
+    height: 80px;
+    transform: rotate(50deg);
+}
+
+.fleur-droite{
+    transform: rotate(50deg);
+}
+
+.fleur-gauche{
+    transform: rotate(-50deg);
+}
+
+.fleur-dore-bas{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 10px;
+}
+
+/* Home */
+
+.home{
+    height: 100%;
+    width: 100%;
+    background-image: url('fond-blanc-texture.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-bleu{
+    width: 120px;
+    height: 120px;
+    margin: 30px auto;
+}
+
+/* Houppa */
+
+.houppa h1{
+    color: #001e3b;
+    font-family: "Pinyon Script", serif;
+    height: fit-content;
+}
+
+.houppa-fleur{
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.fleur-bleue-droite, .fleur-bleue-gauche{
+    width: 100px;
+    height: 110px;
+}
