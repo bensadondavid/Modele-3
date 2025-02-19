@@ -108,7 +108,7 @@
 /* Home */
 
 .home{
-    height: 200vh;
+    height: fit-content;
     width: 100%;
     background-image: url('/fond-blanc-texture.png');
     background-position: center;
@@ -119,13 +119,25 @@
     align-items: center;
 }
 
+.kol-sasson{
+    height: 100px;
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+
 .logo-bleu{
     width: 120px;
     height: 120px;
-    margin: 30px auto 70px auto;
+    margin: 0 auto 40px auto;
+    transform: translateY(-20px);
 }
 
 /* Houppa */
+
+.houppa{
+    height: fit-content;
+}
 
 .houppa-titre{
     color: #001e3b;
@@ -230,3 +242,43 @@
 }
 
 
+/* Chabat */
+
+.chabat{
+    height: 100vh;
+    width: 100%;
+    border-top-left-radius: 50% 180px;
+    border-top-right-radius: 50% 180px;
+    border-bottom-left-radius: 50% 180px;
+    border-bottom-right-radius: 50% 180px;
+    background-image: url('/fond-bleu.png');
+    margin-top: 50px;
+}
+
+.chabat-fleur{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-top: 110px;
+}
+
+.chabat-titre{
+    color: #BC9B51;
+    font-family: "Pinyon Script", serif;
+    height: fit-content;
+    display: block;
+    margin: auto;
+}
+
+.fleur-chabat-haut, .fleur-chabat-bas{
+    width: 180px;
+    height: 70px;
+}
+
+.fleur-chabat-haut{
+    align-self: flex-end;
+}
+
+.fleur-chabat-bas{
+    align-self: flex-start;
+}
