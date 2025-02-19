@@ -338,3 +338,81 @@
     font-size: x-large;
     font-style: italic;
 }
+
+/* Form */
+
+form{
+    height: fit-content;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #001e3b;
+}
+
+.rsvp-titre{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Pinyon Script", serif;
+}
+
+.rsvp-inputs{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    gap: 20px;
+}
+
+.rsvp-inputs input, .rsvp-inputs textarea{
+    border: #001e3b solid 1px;
+    border-radius: 20px;
+    padding: 6px;
+}
+
+.presence{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.square-checkbox {
+    appearance: none; /* Supprime l'apparence par défaut */
+    width: 20px; /* Largeur */
+    height: 20px; /* Hauteur */
+    background-color: white; /* Couleur de fond */
+    border: 2px solid #001e3b; /* Bordure noire */
+    border-radius: 2px; /* Pas de bordure arrondie pour un effet carré */
+    cursor: pointer;
+    position: relative; /* Nécessaire pour positionner la flèche */
+}
+
+.square-checkbox:checked {
+    background-color: white; /* Fond reste blanc */
+    border-color: #001e3b; /* Garde la bordure noire */
+}
+
+.square-checkbox:checked::after {
+    content: ''; /* Pseudo-élément pour la flèche */
+    position: absolute;
+    top: 2px; /* Position verticale */
+    left: 4px; /* Position horizontale */
+    width: 6px; /* Largeur de la flèche */
+    height: 10px; /* Hauteur de la flèche */
+    border: solid #001e3b; /* Couleur de la flèche */
+    border-width: 0 2px 2px 0; /* Taille des lignes de la flèche */
+    transform: rotate(45deg); /* Inclinaison pour créer une flèche */
+}
+
+form button{
+    width: 190px;
+    height: 50px;
+    background-image: url('/fond-bleu.png');
+    color: #BC9B51;
+    border: none;
+    border-radius: 10px;
+    margin: auto;
+}

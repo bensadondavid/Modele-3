@@ -2,10 +2,12 @@
 import { useState } from "react";
 import { ring } from 'ldrs';
 
-// Enregistre le Web Component globalement
-ring.register();
 
 function Form({ activeLanguage }) {
+
+    // Enregistre le Web Component globalement
+    ring.register();
+
     const urlForm = "cloudflare url";
 
     const initialFormData = {
@@ -59,74 +61,75 @@ function Form({ activeLanguage }) {
     
 
     return (
-        <div className="form">
             <form method="post" onSubmit={handleSubmit}>
                 {activeLanguage === "francais" ? (
                     <>
-                        <div className="reponse">
-                            <h1>RSVP</h1>
-                            <p className="reponse">Réponse souhaitée dès réception</p>
+                        <div className="rsvp-titre">
+                            <h1 className="votre-reponse">Votre réponse</h1>
+                            <p className="reponse-souhaite">Réponse souhaitée dès réception</p>
                         </div>
-                        <label style={{ marginTop: "30px" }}>Nom *</label>
-                        <input type="text" name="nom" value={formData.nom} onChange={handleChange} required />
+                        <div className="rsvp-inputs">
+                                <label style={{ marginTop: "30px" }}>Nom *</label>
+                                <input type="text" name="nom" value={formData.nom} onChange={handleChange} required />
 
-                        <label>Prénom *</label>
-                        <input type="text" name="prenom" value={formData.prenom} onChange={handleChange} required />
+                                <label>Prénom *</label>
+                                <input type="text" name="prenom" value={formData.prenom} onChange={handleChange} required />
 
-                        <div className="presence">
-                            <label>
-                                <input
-                                    type="radio"
-                                    name="presence"
-                                    value="assisteront"
-                                    checked={formData.presence === "assisteront"}
-                                    onChange={handleChange}
-                                    className="square-checkbox"
-                                />{" "}
-                                Assisteront
-                            </label>
-                            {formData.presence === "assisteront" && (
-                                <>
-                                    <label>Nombre de personnes</label>
-                                    <input
-                                        type="number"
-                                        name="number"
-                                        value={formData.number}
-                                        onChange={(e) => setFormData({ ...formData, number: parseInt(e.target.value) || "" })}
-                                        required
-                                    />
-                                </>
-                            )}
+                                <div className="presence">
+                                    <label>
+                                        <input
+                                            type="radio"
+                                            name="presence"
+                                            value="assisteront"
+                                            checked={formData.presence === "assisteront"}
+                                            onChange={handleChange}
+                                            className="square-checkbox"
+                                        />{" "}
+                                        Assisteront
+                                    </label>
+                                    {formData.presence === "assisteront" && (
+                                        <>
+                                            <label>Nombre de personnes</label>
+                                            <input
+                                                type="number"
+                                                name="number"
+                                                value={formData.number}
+                                                onChange={(e) => setFormData({ ...formData, number: parseInt(e.target.value) || "" })}
+                                                required
+                                            />
+                                        </>
+                                    )}
 
-                            <label>
-                                <input
-                                    type="radio"
-                                    name="presence"
-                                    value="n_assisteront_pas"
-                                    checked={formData.presence === "n_assisteront_pas"}
-                                    onChange={(e) => {
-                                        setFormData({
-                                            ...formData,
-                                            presence: e.target.value,
-                                            number: "", 
-                                        });
-                                    }}
-                                    className="square-checkbox"
-                                />{" "}
-                                N'assisteront pas
-                            </label>
+                                    <label>
+                                        <input
+                                            type="radio"
+                                            name="presence"
+                                            value="n_assisteront_pas"
+                                            checked={formData.presence === "n_assisteront_pas"}
+                                            onChange={(e) => {
+                                                setFormData({
+                                                    ...formData,
+                                                    presence: e.target.value,
+                                                    number: "", 
+                                                });
+                                            }}
+                                            className="square-checkbox"
+                                        />{" "}
+                                        N'assisteront pas
+                                    </label>
+                                </div>
+
+                                <label>Message pour les mariés</label>
+                                <textarea name="message" value={formData.message} onChange={handleChange} />
+                                
+                                {!isSent ? 
+                                    <button type="submit">Envoyer</button>
+                                    :
+                                    <div className="loader">
+                                        <l-ring size="40" stroke="5" bg-opacity="0" speed="2" color="black"></l-ring>
+                                    </div>
+                                }
                         </div>
-
-                        <label>Message pour les mariés</label>
-                        <textarea name="message" value={formData.message} onChange={handleChange} />
-                        {!isSent ? 
-                            <button type="submit">Envoyer</button>
-                            :
-                            <div className="loader">
-                                <l-ring size="40" stroke="5" bg-opacity="0" speed="2" color="black"></l-ring>
-                            </div>
-                        }
-                        
                     </>
                 ) : (
                     <>
@@ -134,6 +137,7 @@ function Form({ activeLanguage }) {
                             <h1>תשובתכם</h1>
                             <p className="reponse">נודה לתשובתכם בהקדם לאחר קבלת ההודעה</p>
                         </div>
+
                         <label style={{ marginTop: "30px" }}>שם משפחה *</label>
                         <input type="text" name="nom" value={formData.nom} onChange={handleChange} required />
 
@@ -152,6 +156,7 @@ function Form({ activeLanguage }) {
                                 />{" "}
                                 ישתתפו
                             </label>
+
                             {formData.presence === "assisteront" && (
                                 <>
                                     <label>מספר המשתתפים</label>
@@ -198,7 +203,6 @@ function Form({ activeLanguage }) {
                     </>
                 )}
             </form>
-        </div>
     );
 }
 
