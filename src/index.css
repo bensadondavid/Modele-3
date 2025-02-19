@@ -199,7 +199,7 @@
     font-weight:lighter;
 }
 
-.noms{
+.houppa-noms{
     font-family: "Luxurious Script", serif;
     font-weight: 500;
     font-style: normal;
@@ -245,7 +245,7 @@
 /* Chabat */
 
 .chabat{
-    height: 100vh;
+    height: fit-content;
     width: 100%;
     border-top-left-radius: 50% 180px;
     border-top-right-radius: 50% 180px;
@@ -253,32 +253,88 @@
     border-bottom-right-radius: 50% 180px;
     background-image: url('/fond-bleu.png');
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 110px 0;
 }
 
 .chabat-fleur{
     height: fit-content;
     display: flex;
-    flex-direction: column;
-    margin-top: 110px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 20px;
 }
 
 .chabat-titre{
     color: #BC9B51;
     font-family: "Pinyon Script", serif;
     height: fit-content;
+}
+
+.fleur-chabat-gauche, .fleur-chabat-droite{
+    width: 80px;
+    height: 140px;
+}
+
+.fleur-chabat-gauche{
+    transform: rotate(30deg);
+}
+
+.fleur-chabat-droite{
+    transform: rotate(-30deg);
+}
+
+.chabat-noms{
+    height: fit-content;
+    color: #BC9B51;
+    font-family: "Luxurious Script", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 40px auto auto auto;
+}
+
+.chabat-text{
+    color: #BC9B51;
+    text-align: center;
+    width: 80%;
+    margin: 40px auto auto auto;
+    font-size: large;
+    height: fit-content;
+}
+
+.chabat-date{
+    color: #BC9B51;
+    text-align: center;
+    width: 50%;
+    margin: 40px auto auto auto;
+    font-size: larger;
+    height: fit-content;
+}
+
+.chabat-endroit{
+    color: #BC9B51;
+    text-align: center;
+    width: 70%;
+    margin: 40px auto auto auto;
+    font-size: larger;
+    height: fit-content;
+    line-height: 25px;
+}
+
+.chabat-waze{
+    color: #BC9B51;
     display: block;
-    margin: auto;
-}
-
-.fleur-chabat-haut, .fleur-chabat-bas{
-    width: 180px;
-    height: 70px;
-}
-
-.fleur-chabat-haut{
-    align-self: flex-end;
-}
-
-.fleur-chabat-bas{
-    align-self: flex-start;
+    margin: 40px auto auto auto;
+    height: fit-content;
+    text-align: center;
+    font-size: x-large;
+    font-style: italic;
 }
