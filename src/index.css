@@ -112,8 +112,8 @@
     width: 100%;
     background-image: url('/fond-blanc-texture.png');
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat;
+    background-size: contain;
     display: flex;
     flex-direction: column;
     align-items: center;
