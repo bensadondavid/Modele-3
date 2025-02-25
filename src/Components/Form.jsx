@@ -3,7 +3,7 @@ import { useState } from "react";
 import { ring } from 'ldrs';
 
 
-function Form({ activeLanguage }) {
+function Form() {
 
     // Enregistre le Web Component globalement
     ring.register();

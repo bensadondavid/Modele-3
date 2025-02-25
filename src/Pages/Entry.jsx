@@ -1,7 +1,9 @@
 import CountDown from '../Components/CountDown'
 import { Link } from 'react-router-dom'
 
-function Entry(activeLanguage, handleLanguage){
+function Entry(){
+
+    const { language, setLanguage } = useContext(Context)
 
     return(
 

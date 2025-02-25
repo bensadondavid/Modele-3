@@ -1,5 +1,5 @@
 
-function Language({activeLanguage, handleLanguage}){
+function Language(){
 
     return(
         <>

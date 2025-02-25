@@ -1,6 +1,6 @@
 import React from "react";
 
-const WazeButton = ({activeLanguage}) => {
+const WazeButton = () => {
   const handleOpenWaze = () => {
     // Coordonnées de la destination (latitude et longitude)
     const latitude = "31.915749"; 

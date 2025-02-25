@@ -2,7 +2,7 @@
 import React from "react";
 import { createEvent } from "ics";
 
-const SaveTheDate = ({activeLanguage}) => {
+const SaveTheDate = () => {
   const handleDownload = () => {
     // Définir les détails de l'événement
     const event = {

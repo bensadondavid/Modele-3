@@ -1,4 +1,4 @@
-import { MyContextProvider } from './Components/Context';
+import { MyContextProvider } from './Context';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Entry from './Pages/Entry'
 import Home from './Pages/Home'

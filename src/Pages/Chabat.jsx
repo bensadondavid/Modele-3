@@ -1,6 +1,6 @@
 
 
-function Chabat(activeLanguage, handleLanguage){
+function Chabat(){
 
     return(
 
