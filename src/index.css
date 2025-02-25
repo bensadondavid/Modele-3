@@ -9,3 +9,107 @@
 }
 
 
+/* Entry */
+
+.entry{
+    height: 100%;
+    width: 100%;
+    background-image: url('/fond-av.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bsd{
+    height: fit-content;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.logo-entry{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-av-entry{
+    height: 180px;
+    width: 350px;
+}
+
+.entry-date{
+    font-family: "Alice", serif;
+    color: #5D412A;
+}
+
+@font-face {
+    font-family: 'Amsterdam';
+    src: url('./assets/fonts/amsterdam_4/amsterdam-four.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.entry-noms{
+    width: 100%;
+    height: fit-content;
+    font-family: 'Amsterdam', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: #5D412A;
+}
+
+.and{
+    font-size: 20px;
+    margin: auto 30px auto auto;
+}
+
+
+.countdown{
+    width: 90%;
+    height: fit-content;
+    margin: 0 auto;
+    color: #402E20;
+    font-family: "Antic Didone", serif;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.time{
+    text-align: center;
+    font-size: small;
+    background-color: rgba(198, 165, 138, 0.39);
+    border-radius: 28px;
+    height: 65px;
+    width: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.invit-link{
+    height: fit-content;
+    transform: translateY(-20px);
+}
+
+.invit-button{
+    height: 60px;
+    width: 200px;
+    background-color: rgba(198, 165, 138, 0.39);
+    color: #271A11;
+    border: none;
+    border-radius: 30px;
+    font-family: "Antic Didone", serif;
+    font-size: medium;
+}
