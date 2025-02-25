@@ -1,11 +1,15 @@
 // Installer ldrs
 import { useState } from "react";
 import { ring } from 'ldrs';
+import { useContext } from "react";
+import { Context } from '../Context'
+
 
 
 function Form() {
 
-    // Enregistre le Web Component globalement
+    const { language } = useContext(Context)
+
     ring.register();
 
     const urlForm = "cloudflare url";
@@ -62,7 +66,7 @@ function Form() {
 
     return (
             <form method="post" onSubmit={handleSubmit}>
-                {activeLanguage === "francais" ? (
+                {language === "francais" ? (
                     <>
                         <div className="rsvp-titre">
                             <h1 className="votre-reponse">Votre réponse</h1>

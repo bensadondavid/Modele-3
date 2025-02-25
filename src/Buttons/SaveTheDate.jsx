@@ -1,8 +1,12 @@
 // NE PAS OUBLIER D'INSTALLER ICS
-import React from "react";
 import { createEvent } from "ics";
+import { useContext } from "react";
+import { Context } from '../Context'
 
 const SaveTheDate = () => {
+
+  const { language } = useContext(Context)
+
   const handleDownload = () => {
     // Définir les détails de l'événement
     const event = {
@@ -27,7 +31,7 @@ const SaveTheDate = () => {
   };
 
   return (
-    <button className="save-the-date" onClick={handleDownload}>{activeLanguage === 'francais' ? 'Ajouter au calendrier' : 'הוסף ליומן'}</button>
+    <button className="save-the-date" onClick={handleDownload}>{language === 'francais' ? 'Ajouter au calendrier' : 'הוסף ליומן'}</button>
   );
 };
 

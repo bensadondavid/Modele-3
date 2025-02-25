@@ -1,4 +1,6 @@
 import CountDown from '../Components/CountDown'
+import { useContext } from 'react'
+import { Context } from '../Context'
 import { Link } from 'react-router-dom'
 
 function Entry(){

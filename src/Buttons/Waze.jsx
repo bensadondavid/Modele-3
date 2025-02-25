@@ -1,6 +1,11 @@
-import React from "react";
+import { useContext } from "react";
+import { Context } from '../Context'
+
 
 const WazeButton = () => {
+
+  const { language } = useContext(Context)
+
   const handleOpenWaze = () => {
     // Coordonnées de la destination (latitude et longitude)
     const latitude = "31.915749"; 
@@ -14,7 +19,7 @@ const WazeButton = () => {
   };
 
   return (
-    <button className="waze" onClick={handleOpenWaze}>{activeLanguage === "francais" ? "Ouvrir dans Waze" : "מסלול ב-waze"}</button>
+    <button className="waze" onClick={handleOpenWaze}>{language === "francais" ? "Ouvrir dans Waze" : "מסלול ב-waze"}</button>
   );
 };
 

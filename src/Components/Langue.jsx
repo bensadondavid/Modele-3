@@ -1,21 +1,34 @@
+import { useContext } from "react";
+import { Context } from '../Context'
 
 function Language(){
 
+     const { language, setLanguage } = useContext(Context)
+
+     const handleLanguage = ()=>{
+        if(language === 'francais'){
+            setLanguage('hebreu')
+        }
+        else if(language === 'hebreu'){
+            setLanguage('francais')
+        }
+     }
+    
     return(
         <>
         <div className="langue">
             <div className="langue-button">
                 <button
-                onClick={() => handleLanguage("francais")}
-                className={`francais ${activeLanguage === "francais" ? "active" : ""}`}
+                onClick={handleLanguage}
+                className={`francais ${language === "francais" ? "active" : ""}`}
                 >
                 Fr
                 </button>
                 <button
-                onClick={() => handleLanguage("hebreu")}
-                className={`hebreu ${activeLanguage === "hebreu" ? "active" : ""}`}
+                onClick={handleLanguage}
+                className={`hebreu ${language === "hebreu" ? "active" : ""}`}
                 >
-                א
+                ע
                 </button>
             </div>
         </div>

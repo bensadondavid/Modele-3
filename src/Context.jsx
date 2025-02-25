@@ -13,3 +13,5 @@ export const MyContextProvider = ({ children }) =>{
         </>
     )
 }
+
+export { Context };

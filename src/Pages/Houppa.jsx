@@ -1,4 +1,9 @@
-function Houppa(activeLanguage, handleLanguage){
+import { useContext } from 'react'
+import { Context } from '../Context'
+
+function Houppa(){
+
+    const { language } = useContext(Context)
 
     return(
 
