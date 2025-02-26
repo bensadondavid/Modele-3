@@ -2,15 +2,16 @@
 import { createEvent } from "ics";
 import { useContext } from "react";
 import { Context } from '../Context'
+import CalendarIcon from "../assets/icons-svg/CalendarIcon";
 
-const SaveTheDate = () => {
+const SaveTheDate = ({ name, date, iconWidth, iconHeight, iconColor }) => {
 
   const { language } = useContext(Context)
 
   const handleDownload = () => {
     // Définir les détails de l'événement
     const event = {
-      start: [2025, 8, 24, 19, 15], // [YYYY, MM, DD, HH, MM]
+      start: date, // [YYYY, MM, DD, HH, MM]
       duration: { hours: 4 },
       title: "Save the Date: Lola & Hillel's wedding",
       location: "Amaré, Ness Tsiona",
@@ -31,7 +32,10 @@ const SaveTheDate = () => {
   };
 
   return (
-    <button className="save-the-date" onClick={handleDownload}>{language === 'francais' ? 'Ajouter au calendrier' : 'הוסף ליומן'}</button>
+    <div className={name}>
+      <a className="save-the-date-link" onClick={handleDownload}>{language === 'francais' ? 'Ajouter au calendrier' : 'הוסף ליומן'}</a>
+      <CalendarIcon width={iconWidth} height={iconHeight} color={iconColor} />
+    </div>
   );
 };
 

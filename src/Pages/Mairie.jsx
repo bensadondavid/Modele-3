@@ -1,6 +1,7 @@
 import { useContext } from 'react'
 import { Context } from '../Context'
-import { Link } from 'react-router-dom'
+import Waze from '../Buttons/Waze'
+import SaveTheDate from '../Buttons/SaveTheDate'
 
 function Mairie(){
 
@@ -19,14 +20,12 @@ function Mairie(){
                     <h1 className='mairie-nom-2'>Alone</h1>
                 </div>
                 <p className='mairie-text'>se diront</p>
-                <h2 className='mairie-oui'>'Oui'</h2>
+                <h2 className='mairie-oui'>"Oui"</h2>
                 <p className='mairie-date'>Le dimanche 3 juin 2O24 <br /> à 12h00</p>
                 <p className='mairie-endroit'>A la mairie de Saint Brice sous foret <br />95350</p>
                 <p className='mairie-suite'>A issue de la cérémonie, un vin d'honneur seras servi sur place </p>
-                <div className="mairie-localisation">
-                <Link to='' >Itineraire Waze</Link>
-                <img src="localisateur.png" className='localisation-icon' />
-                </div>
+                <Waze name={'waze-mairie'} lat={48.8525} long={2.3372} iconWidth='18px' iconHeight='25px' iconColor='#806548' />
+                <SaveTheDate name={'save-the-date-mairie'} date={[2024, 6, 3, 12, 0]} iconColor='#806548' iconHeight='18px' iconWidth='21px'/>
                 <img src="fleur-mairie-bas.png" className='fleur-mairie-bas' />
             </div>
         </div>

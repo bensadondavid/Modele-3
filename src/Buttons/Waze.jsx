@@ -1,15 +1,16 @@
 import { useContext } from "react";
 import { Context } from '../Context'
+import LocationIcon from "../assets/icons-svg/LocalisationIcon";
 
 
-const WazeButton = () => {
+const WazeButton = ({ name, lat, long, iconWidth, iconHeight, iconColor }) => {
 
   const { language } = useContext(Context)
 
   const handleOpenWaze = () => {
     // Coordonnées de la destination (latitude et longitude)
-    const latitude = "31.915749"; 
-    const longitude = "34.778700";
+    const latitude = lat; 
+    const longitude = long;
 
     // URL pour ouvrir Waze
     const wazeUrl = `https://waze.com/ul?ll=${latitude},${longitude}&navigate=yes`;
@@ -19,7 +20,10 @@ const WazeButton = () => {
   };
 
   return (
-    <button className="waze" onClick={handleOpenWaze}>{language === "francais" ? "Ouvrir dans Waze" : "מסלול ב-waze"}</button>
+    <div className={name}>
+      <a className="waze-link" onClick={handleOpenWaze}>{language === "francais" ? "Itineraire Waze" : "מסלול ב-waze"}</a>
+      <LocationIcon width={iconWidth} height={iconHeight} color={iconColor} />
+    </div>
   );
 };
 

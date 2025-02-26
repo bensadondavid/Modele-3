@@ -135,8 +135,9 @@
 }
 
 .mairie-card{
+    height: fit-content;
     width: 85%;
-    margin: 30px auto 30px auto;
+    margin: 60px auto 30px auto;
     padding: 120px 0;
     background-color: #E1C3A3;
     border: none;
@@ -208,7 +209,7 @@
 }
 
 .mairie-oui{
-    margin: 20px auto auto auto;
+    margin: 10px auto auto auto;
     font-family: "Antic Didone", serif;
     font-size: 30px;
     color: #806548;
@@ -241,29 +242,34 @@
     color: #806548;
 }
 
-.mairie-localisation{
+.waze-mairie{
+    margin: 30px auto auto auto;
     height: fit-content;
-    margin: 40px auto auto auto;
-    font-family: "Antic Didone", serif;
-    color: #806548;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 4px;
+    gap: 5px;
 }
 
-.mairie-localisation a{
-    display: block;
-    text-decoration: none;
+.waze-mairie .waze-link{
     color: #806548;
-}
-
-.localisation-icon{
-    height: 18px;
-    width: 18px;
     font-family: "Antic Didone", serif;
+    font-style: italic;
+}
+
+.save-the-date-mairie{
+    margin: 10px auto auto auto;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.save-the-date-mairie .save-the-date-link{
     color: #806548;
+    font-family: "Antic Didone", serif;
+    font-style: italic;
 }
 
 .fleur-mairie-bas{
