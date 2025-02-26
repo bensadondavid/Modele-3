@@ -1,6 +1,7 @@
 import { useContext, useState } from 'react';
 import { Context} from '../Context';
 import Mairie from './Mairie'
+import Henne from './Henne'
 
 function Home(){
 
@@ -10,6 +11,7 @@ function Home(){
 
         <div className="home">
             <Mairie />
+            <Henne />
         </div>
 
     )

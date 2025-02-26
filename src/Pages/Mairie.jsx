@@ -11,7 +11,7 @@ function Mairie(){
 
         <div className="mairie">
             <div className="mairie-card">
-                <img src="fleur-mairie-haut.png" className='fleur-mairie-haut' />
+                <img src="fleur-fonce-haut.png" className='fleur-fonce-haut' />
                 <h1 className='mairie-title'>LA MAIRIE</h1>
                 <img src="bagues-mairie.png" className='bagues-mairie'/>
                 <div className="mairie-noms">
@@ -26,7 +26,7 @@ function Mairie(){
                 <p className='mairie-suite'>A issue de la cérémonie, un vin d'honneur seras servi sur place </p>
                 <Waze name={'waze-mairie'} lat={48.8525} long={2.3372} iconWidth='18px' iconHeight='25px' iconColor='#806548' />
                 <SaveTheDate name={'save-the-date-mairie'} date={[2024, 6, 3, 12, 0]} iconColor='#806548' iconHeight='18px' iconWidth='21px'/>
-                <img src="fleur-mairie-bas.png" className='fleur-mairie-bas' />
+                <img src="fleur-fonce-bas.png" className='fleur-fonce-bas' />
             </div>
         </div>
 

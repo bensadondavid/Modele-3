@@ -8,7 +8,7 @@ function BeachParty(){
     return(
 
         <div className="beach-party">
-        
+    
         </div>
 
     )
