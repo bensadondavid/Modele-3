@@ -29,6 +29,7 @@
     font-family: "Alice", serif;
     font-weight: 400;
     font-style: normal;
+    color: #271A11;
 }
 
 .logo-entry{
@@ -112,4 +113,164 @@
     border-radius: 30px;
     font-family: "Antic Didone", serif;
     font-size: medium;
+}
+
+
+/* Home */
+
+.home{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Mairie */
+
+.mairie{
+    height: fit-content;
+    width: 100%;
+    background-image: url('/fond-element-haut.png');
+    overflow: hidden;
+}
+
+.mairie-card{
+    width: 85%;
+    margin: 30px auto 30px auto;
+    padding: 120px 0;
+    background-color: #E1C3A3;
+    border: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 50% 150px;
+    border-top-right-radius: 50% 150px;
+    border-bottom-left-radius: 50% 150px;
+    border-bottom-right-radius: 50% 150px;
+}
+
+.fleur-mairie-haut{
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    top: -10px;
+    left: -9px;
+    transform: rotate(45deg);
+}
+
+
+.mairie-title{
+    height: fit-content;
+    color: #806548;
+    font-family: "Antic Didone", serif;
+    font-weight: 400;
+    text-shadow: 4px 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.bagues-mairie{
+    width: 40px;
+    height: 30px;
+}
+
+.mairie-noms{
+    color: #806548;
+    font-family: 'Amsterdam', sans-serif;
+    display: flex;
+    flex-direction: row;
+    margin: 90px auto auto auto;
+}
+
+.mairie-nom-1{
+    transform: translateY(-70px);
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.mairie-and{
+    font-weight: 100;
+}
+
+.mairie-nom-2{
+    height: fit-content;
+    transform: translateY(10px);
+    font-size: 50px;
+    font-weight: 100;
+}
+
+
+.mairie-text{
+    margin: 40px auto auto auto;
+    font-family: "Antic Didone", serif;
+    color: #806548;
+    height: fit-content;
+}
+
+.mairie-oui{
+    margin: 20px auto auto auto;
+    font-family: "Antic Didone", serif;
+    font-size: 30px;
+    color: #806548;
+    height: fit-content;
+}
+
+.mairie-date{
+    height: fit-content;
+    margin: 40px auto auto auto;
+    font-family: "Antic Didone", serif;
+    color: #806548;
+    font-size: 20px;
+    text-align: center;
+}
+
+.mairie-endroit{
+    height: fit-content;
+    margin: 40px auto auto auto;
+    font-family: "Antic Didone", serif;
+    color: #806548;
+    text-align: center;
+}
+
+.mairie-suite{
+    height: fit-content;
+    width: 60%;
+    text-align: center;
+    margin: 40px auto auto auto;
+    font-family: "Antic Didone", serif;
+    color: #806548;
+}
+
+.mairie-localisation{
+    height: fit-content;
+    margin: 40px auto auto auto;
+    font-family: "Antic Didone", serif;
+    color: #806548;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.mairie-localisation a{
+    display: block;
+    text-decoration: none;
+    color: #806548;
+}
+
+.localisation-icon{
+    height: 18px;
+    width: 18px;
+    font-family: "Antic Didone", serif;
+    color: #806548;
+}
+
+.fleur-mairie-bas{
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    bottom: -10px;
+    right: -9px;
+    transform: rotate(45deg);
 }

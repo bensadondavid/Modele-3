@@ -1,0 +1,37 @@
+import { useContext } from 'react'
+import { Context } from '../Context'
+import { Link } from 'react-router-dom'
+
+function Mairie(){
+
+    const { language } = useContext(Context)
+
+    return(
+
+        <div className="mairie">
+            <div className="mairie-card">
+                <img src="fleur-mairie-haut.png" className='fleur-mairie-haut' />
+                <h1 className='mairie-title'>LA MAIRIE</h1>
+                <img src="bagues-mairie.png" className='bagues-mairie'/>
+                <div className="mairie-noms">
+                    <h1 className='mairie-nom-1'>Victoria</h1>
+                    <h1 className='mairie-and'>&</h1>
+                    <h1 className='mairie-nom-2'>Alone</h1>
+                </div>
+                <p className='mairie-text'>se diront</p>
+                <h2 className='mairie-oui'>'Oui'</h2>
+                <p className='mairie-date'>Le dimanche 3 juin 2O24 <br /> à 12h00</p>
+                <p className='mairie-endroit'>A la mairie de Saint Brice sous foret <br />95350</p>
+                <p className='mairie-suite'>A issue de la cérémonie, un vin d'honneur seras servi sur place </p>
+                <div className="mairie-localisation">
+                <Link to='' >Itineraire Waze</Link>
+                <img src="localisateur.png" className='localisation-icon' />
+                </div>
+                <img src="fleur-mairie-bas.png" className='fleur-mairie-bas' />
+            </div>
+        </div>
+
+    )
+}
+
+export default Mairie

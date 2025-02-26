@@ -17,7 +17,7 @@ function Entry(){
             </div>
             <p className="entry-noms">Victoria <span className='and'>&</span> Alone</p>
             <CountDown />
-            <Link className='invit-link'><button className='invit-button'>Voir l'invitation</button></Link>
+            <Link to='/home' className='invit-link'><button className='invit-button'>Voir l'invitation</button></Link>
         </div>
 
     )
