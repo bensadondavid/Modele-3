@@ -3,7 +3,7 @@ import { Context } from '../Context'
 import LocationIcon from "../assets/icons-svg/LocalisationIcon";
 
 
-const WazeButton = ({ name, lat, long, iconWidth, iconHeight, iconColor }) => {
+const Waze = ({ name, lat, long, iconWidth, iconHeight, iconColor }) => {
 
   const { language } = useContext(Context)
 
@@ -27,4 +27,4 @@ const WazeButton = ({ name, lat, long, iconWidth, iconHeight, iconColor }) => {
   );
 };
 
-export default WazeButton;
+export default Waze;
