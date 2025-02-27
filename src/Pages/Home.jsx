@@ -1,5 +1,6 @@
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { Context} from '../Context';
+import Musique from '../Components/Musique'
 import Mairie from './Mairie'
 import Henne from './Henne'
 import Houppa from './Houppa'
@@ -13,6 +14,7 @@ function Home(){
 
         <div className="home">
             <p className='bsd'>בס"ד</p>
+            <Musique />
             <Mairie />
             <Henne />
             <Houppa />
