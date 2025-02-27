@@ -33,8 +33,8 @@ function Houppa(){
                     <h1 className='houppa-nom-2'>Alone</h1>
                 </div>
                 <p className='houppa-text'>et vous prient de bien vouloir assister a la houppa ainsi qu’a la soiree  qui aura lieu le</p>
-                <p className='houppa-date'>le Dimanche 3 juin 2024 <br /> A 20h00 </p>
-                <p className='houppa-endroit'>A la salle de fetes ORION <br /> Saint brice sous foret, 95350 </p>
+                <p className='houppa-date'>Lundi 3 juin 2024 <br />כו’באייר תשפה <br />A partir de 18h00   </p>
+                <p className='houppa-endroit'>A la salle Emeralde Garden <br /> Park Taassit Shourak, Beth Shemesh </p>
                 <p className="pensee">"Une tendre pensée pour nos grands parents toujours presents dans nos coeurs"</p>
                 <Waze name={'waze-houppa'} lat={48.8525} long={2.3372} iconWidth='18px' iconHeight='25px' iconColor='#271A11' />
                 <SaveTheDate name={'save-the-date-houppa'} date={[2024, 6, 3, 12, 0]} iconColor='#271A11' iconHeight='18px' iconWidth='21px'/>

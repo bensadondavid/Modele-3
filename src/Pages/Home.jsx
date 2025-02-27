@@ -5,6 +5,7 @@ import Mairie from './Mairie'
 import Henne from './Henne'
 import Houppa from './Houppa'
 import BeachParty from './BeachParty';
+import Chabat from './Chabat';
 
 function Home(){
 
@@ -19,6 +20,7 @@ function Home(){
             <Henne />
             <Houppa />
             <BeachParty />
+            <Chabat />
         </div>
 
     )

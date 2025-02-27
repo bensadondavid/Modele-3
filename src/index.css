@@ -13,7 +13,7 @@
 .too-big{
     width: 100%;
     height: 100vh;
-    background-image: url('/public/fond-element-haut.png');
+    background-image: url('/fond-element-haut.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -716,3 +716,146 @@
 }
 
 
+/* Chabat */
+
+.chabat{
+    height: fit-content;
+    width: 100%;
+    background-image: url('/fond-element-haut.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.chabat-card{
+    height: fit-content;
+    width: 85%;
+    margin: 60px auto 30px auto;
+    padding: 120px 0;
+    background-color: #402E20;
+    border: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 50% 150px;
+    border-top-right-radius: 50% 150px;
+    border-bottom-left-radius: 50% 150px;
+    border-bottom-right-radius: 50% 150px;
+}
+
+
+.chabat-title{
+    height: fit-content;
+    color: #C6A58A;
+    font-family: "Antic Didone", serif;
+    font-weight: 400;
+    text-shadow: 4px 0 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+}
+
+.logo-chabat{
+    width: 40px;
+    height: 50px;
+}
+
+.chabat-noms{
+    color: #C6A58A;
+    font-family: 'Amsterdam', sans-serif;
+    display: flex;
+    flex-direction: row;
+    margin: 90px auto auto auto;
+}
+
+.chabat-nom-1{
+    transform: translateY(-70px);
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.chabat-and{
+    font-weight: 100;
+}
+
+.chabat-nom-2{
+    height: fit-content;
+    transform: translateY(10px);
+    font-size: 50px;
+    font-weight: 100;
+}
+
+
+.chabat-text{
+    margin: 40px auto auto auto;
+    font-family: "Antic Didone", serif;
+    color: #C6A58A;
+    height: fit-content;
+    text-align: center;
+    width: 70%;
+}
+
+.chabat-oui{
+    margin: 10px auto auto auto;
+    font-family: "Antic Didone", serif;
+    font-size: 30px;
+    color: #C6A58A;
+    height: fit-content;
+}
+
+.chabat-date{
+    height: fit-content;
+    margin: 40px auto auto auto;
+    font-family: "Antic Didone", serif;
+    color: #C6A58A;
+    font-size: 20px;
+    text-align: center;
+}
+
+.chabat-endroit{
+    height: fit-content;
+    margin: 40px auto auto auto;
+    font-family: "Antic Didone", serif;
+    color: #C6A58A;
+    text-align: center;
+}
+
+.chabat-suite{
+    height: fit-content;
+    width: 60%;
+    text-align: center;
+    margin: 40px auto auto auto;
+    font-family: "Antic Didone", serif;
+    color: #C6A58A;
+}
+
+.waze-chabat{
+    margin: 30px auto auto auto;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.waze-chabat .waze-link{
+    color: #C6A58A;
+    font-family: "Antic Didone", serif;
+    font-style: italic;
+}
+
+.save-the-date-chabat{
+    margin: 10px auto auto auto;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.save-the-date-chabat .save-the-date-link{
+    color: #C6A58A;
+    font-family: "Antic Didone", serif;
+    font-style: italic;
+}
