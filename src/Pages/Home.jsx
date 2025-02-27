@@ -12,6 +12,7 @@ function Home(){
     return(
 
         <div className="home">
+            <p className='bsd'>בס"ד</p>
             <Mairie />
             <Henne />
             <Houppa />
