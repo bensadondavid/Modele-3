@@ -796,13 +796,6 @@
     width: 70%;
 }
 
-.chabat-oui{
-    margin: 10px auto auto auto;
-    font-family: "Antic Didone", serif;
-    font-size: 30px;
-    color: #C6A58A;
-    height: fit-content;
-}
 
 .chabat-date{
     height: fit-content;
@@ -819,6 +812,7 @@
     font-family: "Antic Didone", serif;
     color: #C6A58A;
     text-align: center;
+    width: 70%;
 }
 
 .chabat-suite{
