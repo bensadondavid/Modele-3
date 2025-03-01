@@ -853,3 +853,162 @@
     font-family: "Antic Didone", serif;
     font-style: italic;
 }
+
+
+/* Response */
+
+.response{
+    height: fit-content;
+    width: 100%;
+    background-image: url('/fond-element-bas.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.response-card{
+    height: fit-content;
+    width: 85%;
+    margin: 60px auto 30px auto;
+    padding: 120px 0;
+    background-color: #E8D5BB;
+    border: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 50% 150px;
+    border-top-right-radius: 50% 150px;
+    border-bottom-left-radius: 50% 150px;
+    border-bottom-right-radius: 50% 150px;
+}
+
+.response-title{
+    height: fit-content;
+    color: #402E20;
+    font-family: "Antic Didone", serif;
+    font-weight: 400;
+    text-shadow: 2px 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.reponse-souhaite{
+    font-family: "Italianno", serif;
+    font-size: larger;
+    margin-bottom: 20px;
+}
+
+
+/* Form */
+
+form{
+    height: fit-content;
+    width: 100%;
+    font-family: "Antic Didone", serif;
+    color: #402E20;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    letter-spacing: 2px;
+}
+
+label{
+    margin: 10px 0 10px 20px;
+}
+
+.nom, .prenom, .person-number{
+    width: 85%;
+    height: 20px;
+    padding: 10px;
+    background-color: #DBC5A8;
+    border: #5D412A solid 1px;
+    border-top-left-radius: 50% 170px;
+    border-top-right-radius: 50% 170px;
+    border-bottom-left-radius: 50% 170px;
+    border-bottom-right-radius: 50% 170px;
+    margin-top: 5px;
+}
+
+.label-textarea{
+    margin-left: 20px;
+}
+
+input[type = radio]{
+    margin-right: 10px;
+}
+
+.square-checkbox {
+    appearance: none; /* Supprime l'apparence par défaut */
+    height: 15px;
+    width: 15px;
+    background-color: transparent; /* Couleur de fond */
+    border: 1px solid #5D412A; /* Bordure noire */
+    border-radius: 50%; /* Pas de bordure arrondie pour un effet carré */
+    cursor: pointer;
+    position: relative; /* Nécessaire pour positionner la flèche */
+    margin-left: 10px;
+}
+
+.square-checkbox:checked::after {
+    content: ''; /* Pseudo-élément pour la flèche */
+    position: absolute;
+    top: 2px; /* Position verticale */
+    left: 4px; /* Position horizontale */
+    width: 3px; /* Largeur de la flèche */
+    height: 5px; /* Hauteur de la flèche */
+    border: solid #917F6C; /* Couleur de la flèche */
+    border-width: 0 2px 2px 0; /* Taille des lignes de la flèche */
+    transform: rotate(45deg); /* Inclinaison pour créer une flèche */
+}
+
+textarea{
+    width: 85%;
+    height: 40px;
+    padding: 10px;
+    background-color: #DBC5A8;
+    border: #5D412A solid 1px;
+    border-top-left-radius: 50% 170px;
+    border-top-right-radius: 50% 170px;
+    border-bottom-left-radius: 50% 170px;
+    border-bottom-right-radius: 50% 170px;
+    margin-left: 15px;
+}
+
+.submit-button{
+    height: 40px;
+    width: 170px;
+    margin: 15px auto;
+    border-radius: 20px;
+    background-color: #402E20;
+    color: #C6A58A;
+    font-family: "Antic Didone", serif;
+    letter-spacing: 2px;
+}
+
+/* Presence */
+
+.presence{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.present{
+    display: flex;
+    flex-direction: column;
+}
+
+.present input{
+    margin-right: 10px; 
+}
+
+.present .square-checkbox{
+    margin-left: 25px;
+}
+
+.number{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
