@@ -979,6 +979,7 @@ textarea{
     height: 40px;
     width: 170px;
     margin: 15px auto;
+    border: none;
     border-radius: 20px;
     background-color: #402E20;
     color: #C6A58A;
