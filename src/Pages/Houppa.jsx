@@ -26,7 +26,7 @@ function Houppa(){
                         <p>Mr et Mme John Doe</p>
                     </div>
                 </div>
-                <p className='houppa-text'>ont la joie de vous faire part du mariage de leurs petits enfants et enfants</p>
+                <p className='houppa-text'>Ont la joie de vous faire part du mariage de leurs petits enfants et enfants</p>
                 <div className="houppa-noms">
                     <h1 className='houppa-nom-1'>Victoria</h1>
                     <h1 className='houppa-and'>&</h1>

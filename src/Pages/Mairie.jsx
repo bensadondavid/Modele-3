@@ -19,7 +19,7 @@ function Mairie(){
                     <h1 className='mairie-and'>&</h1>
                     <h1 className='mairie-nom-2'>Alone</h1>
                 </div>
-                <p className='mairie-text'>se diront</p>
+                <p className='mairie-text'>Se diront</p>
                 <h2 className='mairie-oui'>"Oui"</h2>
                 <p className='mairie-date'>Le dimanche 3 juin 2O24 <br /> à 12h00</p>
                 <p className='mairie-endroit'>A la mairie de Saint Brice sous foret <br />95350</p>
