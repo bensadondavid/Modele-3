@@ -19,18 +19,31 @@ function Form(){
         mairie : false,
         henne : false,
         houppa : false,
-        poolParty : false,
         chabat : false, 
         number : "",
         message : ''
     })
 
     const handleChange = (e)=>{
-        const { name,type, value, checked } = e.target
-        setFormData((prev)=>({
-            ...prev, 
-            [name]: type === 'checkbox' ? checked : value
-        }))
+        const { name, type, value, checked } = e.target;
+
+        setFormData((prev) => {
+            if (name === 'presence' && value === "n'assisteront pas") {
+                return {
+                    ...prev,
+                    presence: value,
+                    mairie: false,
+                    henne: false,
+                    houppa: false,
+                    chabat: false,
+                    number: "",
+                };
+            }
+            return {
+                ...prev,
+                [name]: type === 'checkbox' ? checked : value,
+            };
+        });
     }
 
     const handleSubmit = async (e)=>{
@@ -56,7 +69,6 @@ function Form(){
                     mairie : false,
                     henne : false,
                     houppa : false,
-                    poolParty : false,
                     chabat : false, 
                     number : "",
                     message : ''
@@ -98,14 +110,11 @@ function Form(){
                             <input type="checkbox" name="houppa" checked={formData.houppa} onChange={handleChange} className='square-checkbox'/>
                             Houppa</label>
                             <label>
-                            <input type="checkbox" name="poolParty" checked={formData.poolParty} onChange={handleChange} className='square-checkbox'/>
-                            Pool Party</label>
-                            <label>
                             <input type="checkbox" name="chabat" checked={formData.chabat} onChange={handleChange} className='square-checkbox'/> 
                             Chabat</label>
                         <div className="number">
                             <label>Nombre de personnes*
-                            <input type="number" name="number" value={formData.number} onChange={handleChange} className="person-number" required/>
+                            <input type="number" name="number" value={formData.number} onChange={handleChange} className="person-number" required={formData.presence === "assisteront"}/>
                             </label>
                         </div>
                     </div>
