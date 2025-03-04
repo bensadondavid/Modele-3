@@ -1,25 +1,27 @@
 import { MyContextProvider } from './Context';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import TooBig from './Pages/TooBig';
-import Entry from './Pages/Entry'
-import Home from './Pages/Home'
+import React, { Suspense, lazy } from 'react';
+
+// 📌 Code splitting (Lazy Loading)
+const TooBig = lazy(() => import('./Pages/TooBig'));
+const Entry = lazy(() => import('./Pages/Entry'));
+const Home = lazy(() => import('./Pages/Home'));
 
 function App() {
-
-  const innerWidth = window.innerWidth
+  const innerWidth = window.innerWidth;
 
   return (
-    <>
     <MyContextProvider>
       <BrowserRouter>
-      <Routes>
-        <Route path='/' element={innerWidth <= 590 ? <Entry /> : <TooBig />} />
-        <Route path='/home' element={<Home />} />
-      </Routes>
-      </BrowserRouter> 
+        <Suspense fallback={<div>Chargement...</div>}>
+          <Routes>
+            <Route path='/' element={innerWidth <= 590 ? <Entry /> : <TooBig />} />
+            <Route path='/home' element={<Home />} />
+          </Routes>
+        </Suspense>
+      </BrowserRouter>
     </MyContextProvider>
-    </>
-  )
+  );
 }
 
-export default App
+export default App;
